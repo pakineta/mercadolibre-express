@@ -1,0 +1,100 @@
+
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+
+  :root {
+    background-color: #EEEEEE;
+    color: CanvasText;
+    color-scheme: #EEEEEE;
+  }
+
+
+/* Define your colors */
+$yellow-300: #f6e05e;
+$gray-300: #e2e8f0;
+$slate-700: #4a5568;
+
+@import "./SearchContainer";
+@import "./ItemContainer";
+
+// /* Define reusable styles */
+// .flex {
+//   display: flex;
+// }
+
+// .h-16 {
+//   height: 4rem;
+// }
+
+// .h-8 {
+//   height: 2rem;
+// }
+
+// .px-4 {
+//   padding-left: 1rem;
+//   padding-right: 1rem;
+// }
+
+// .px-2 {
+//   padding-left: 0.5rem;
+//   padding-right: 0.5rem;
+// }
+
+// .py-1 {
+//   padding-top: 0.25rem;
+//   padding-bottom: 0.25rem;
+// }
+
+// .text-black {
+//   color: black;
+// }
+
+// .text-white {
+//   color: white;
+// }
+
+// .text-slate-700 {
+//   color: $slate-700;
+// }
+
+// .bg-yellow-300 {
+//   background-color: $yellow-300;
+// }
+
+// .bg-gray-300 {
+//   background-color: $gray-300;
+// }
+
+// .grid {
+//   display: grid;
+// }
+
+// .gap-4 {
+//   gap: 1rem;
+// }
+
+// .text-xl {
+//   font-size: 1.25rem;
+//   font-weight: bold;
+// }
+
+// .font-bold {
+//   font-weight: bold;
+// }
+
+// .ml-auto {
+//   margin-left: auto;
+// }
+
+// .text-sm {
+//   font-size: 0.875rem;
+// }
+
+// .opacity-50 {
+//   opacity: 0.5;
+// }
