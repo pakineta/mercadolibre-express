@@ -17,33 +17,40 @@ function SearchResults() {
   }, [searchQuery]);
 
   return (
-    <Fragment>
+    <section className='results-wrapper'>
+     <div className='results-container'> 
       <div className='category-container'>
           <nav>{backendData.categories[0]?.join(" > ")}</nav>
       </div>
-        <div className='article-container'>
-            <article>
-              {backendData.items.map((item) => (
-                <a href={`/items/${item.id}`} key={item.id} >
-                  <img alt={item.title} src={item.picture} />
-                  <div>
-                    <p>
-                      {Number(`${item.price.amount}.${item.price.decimals}`).toLocaleString("es-AR", {
-                        style: "currency",
-                        currency: item.price.currency,
-                      })}
-                    </p>
-                    <p>{item.title}</p>
-                    <hr />
-                  </div>
-                  <span>
-                    {item.seller}
-                  </span>      
-                </a>
-              ))}
-            </article>
-          </div> 
-        </Fragment>
+          <div className='items-container'>
+          
+                {backendData.items.map((item) => (
+                  <>
+                    <a href={`/items/${item.id}`} key={item.id} >
+                        <div className='item'>
+                        <img alt={item.title} src={item.picture} />
+                        <div className='item-info'>
+                          <p>
+                            {Number(`${item.price.amount}.${item.price.decimals}`).toLocaleString("es-AR", {
+                              style: "currency",
+                              currency: item.price.currency,
+                            })}
+                          </p>
+                          <p>{item.title}</p>
+                          
+                        </div>
+                        <div className='item-seller'>
+                          {item.seller}
+                        </div>
+                      </div>      
+                    </a>
+                    <hr/>
+                  </>
+                ))}
+              
+            </div> 
+        </div>
+        </section>
   );
 }
 

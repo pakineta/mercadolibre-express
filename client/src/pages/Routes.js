@@ -30,9 +30,9 @@ function Routes() {
       return (
         <>
           <SearchForm />
-          <section>
+         
             <SearchResults />
-          </section>
+          
         </>
       );
     } else {
