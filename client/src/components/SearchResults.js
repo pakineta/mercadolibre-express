@@ -17,7 +17,7 @@ function SearchResults() {
       });
   }, [searchQuery]);
 
-  console.log(backendData);
+
   return (
     
       
