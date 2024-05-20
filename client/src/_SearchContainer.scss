@@ -1,46 +1,52 @@
-.search-cointainer{
+.search-cointainer {
     display: grid;
     background-color: $yellow-300;
 
-    header{
-        display:flex;
-        height: 4rem; /* 16 * 0.25rem = 4rem */
-        background-color: #f6e05e; /* bg-yellow-300 */
-        padding-left: 1rem; /* 4 * 0.25rem = 1rem */
-        padding-right: 1rem; /* 4 * 0.25rem = 1rem */
+    header {
+        display: flex;
+        height: 4rem;
+        background-color: #f6e05e;
+        padding-left: 1rem;
+        padding-right: 1rem;
         place-content: center;
-        span{
+
+        span {
             place-content: center;
             padding-right: 1rem;
             padding-top: 0.3rem;
         }
-        form{
+
+        form {
             margin: auto;
             display: flex;
-            width: 80%;   
+            width: 80%;
             align-content: center;
             justify-content: flex-start;
-            input{
-                    &:focus{ 
-                        outline: none;
-                    }
-                    border:none;
-                    width:100%;
-                    padding: 10px 60px 10px 15px;
 
-                    
-            }
-            button{
-                width:4rem;
-                background-color: #EEEEEE;
+            input {
+                &:focus {
+                    outline: none;
+                }
+
                 border:none;
-                img{
-                    width:50%;
-                    
+                width:100%;
+                padding: 10px 60px 10px 15px;
+
+
+            }
+
+            button {
+                width: 4rem;
+                background-color: #EEEEEE;
+                border: none;
+
+                img {
+                    width: 50%;
+
                 }
             }
         }
     }
-    
+
 
 }
