@@ -18,7 +18,11 @@
    gap: 1rem;
    background-color: white;
    grid-template-columns:60% auto;
-
+       
+    @media (max-width: 768px) {
+        padding-left:2rem;
+        display:block;
+        }
 
    .item-data{
     width: 100%;
@@ -59,6 +63,11 @@
     order: 1;
     padding-left: 3.5rem;
     padding-top: 5rem;
+
+    @media (max-width: 768px) {
+        width:60%;
+        }
+
     h1{
         font-weight: 600;
     }
