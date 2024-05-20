@@ -11,26 +11,35 @@ Antes de empezar, asegúrate de tener instalado lo siguiente:
 Sigue estos pasos para instalar las dependencias del proyecto:
 
 1. Clona el repositorio:
-   ```bash
+   
    git clone https://github.com/pakineta/mercadolibre-express.git
 
 2. Navega al directorio del proyecto:
-```bash
+
 cd mercadolibre-express
 ```
-Navega a la carpeta del servidor:
+3. Navega a la carpeta del servidor:
 
-3. Instala las dependencias:
+cd server
+
+4. Instala las dependencias:
   
    npm install
 
    o si usas yarn:
-  
+
    yarn install
-
+   
 ## Uso
-Para iniciar el servidor en modo de desarrollo:
 
-npm run dev
+Para iniciar la aplicación en modo de desarrollo:
 
-El servidor se ejecutará en http://localhost:5000
+En el directorio del proyecto mercadolibre-express debes ir al directorio  server:
+
+cd server
+
+Dentro de este directorio ahora si puedes ejecutar el siguiente comando:
+
+- npm run dev start / yarn run dev
+
+  El servidor correra en http://localhost:5000

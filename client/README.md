@@ -17,6 +17,10 @@ Sigue estos pasos para instalar las dependencias del proyecto:
 2. Navega al directorio del proyecto:
   
    cd mercadolibre-express
+
+3. Navega a la carpeta del cliente:
+
+cd client
   
 3. Instala las dependencias:
    
@@ -31,18 +35,7 @@ Sigue estos pasos para instalar las dependencias del proyecto:
 
 Para iniciar la aplicación en modo de desarrollo:
 
-npm start
-
-o si usas yarn:
-
-yarn start
-
-
-La aplicación se ejecutará en http://localhost:3000.
-
-Scripts Disponibles
-
-En el directorio del proyecto debes ir al directorio client:
+En el directorio del proyecto mercadolibre-express debes ir al directorio client:
 
 cd client
 
@@ -50,7 +43,8 @@ Dentro de este directorio ahora si puedes ejecutar el siguiente comando:
 
 - npm start / yarn start
 
-  Inicia la aplicación en modo de desarrollo. Abre http://localhost:3000 para verla en el navegador.
+  La aplicación se ejecutará en http://localhost:3000
+
 
 
 
