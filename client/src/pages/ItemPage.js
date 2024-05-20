@@ -20,7 +20,7 @@ function ItemPage({ id }) {
     <section className='item-wrapper'>
       <div className='result-container'>
         <div className='category-container'>
-          <nav>'Categoriy  Cointainer'</nav>
+          <nav>{itemData.categories?.join(" > ")}</nav>
         </div>
         <div className='item-container'>
           <div className='item-image'><img src={itemData.picture} alt={itemData.title} /></div>
