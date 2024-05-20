@@ -17,14 +17,34 @@ function ItemPage({ id }) {
     return <div>Loading...</div>;
   }
 
+
   return (
-    <section>
-      <div className='item-Cointainer'>
-        <img src={itemData.picture} alt={itemData.title} />
-        <p>{itemData.title}</p>
-        <hr />
-        <p>{itemData.description}</p>
+    <section className='item-wrapper'>
+      <div className='result-container'>
+        <div className='category-container'>
+            <nav>'Categoriy  Cointainer'</nav>
         </div>
+
+                  
+              <div className='item-container'>      
+                  <div className='item-image'><img src={itemData.picture} alt={itemData.title} /></div>
+                  <div className='item-data'>
+                          <h1>{itemData.title}</h1>
+                          <h1 className='item-price'>
+                            {Number(`${itemData.price.amount}.${itemData.price.decimals}`).toLocaleString("es-AR", {
+                              style: "currency",
+                              currency: itemData.price.currency,
+                            })}
+                          </h1>
+                          <button className='buy-button'>COMPRAR</button>
+                  </div>
+                        <div className='item-description'>
+                          <h1>Descripción del producto</h1>
+                          <p>{itemData.description}</p> 
+                       </div>
+                </div>
+             
+              </div>
      
     </section>
     
