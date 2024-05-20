@@ -22,7 +22,7 @@ Sigue estos pasos para instalar las dependencias del proyecto:
 
 cd client
   
-3. Instala las dependencias:
+4. Instala las dependencias:
    
    npm install
 
